@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sistema.css" media="screen">
+    <title>Sistema</title>
+</head>
+<body>
+
+    
+     <div>
+        <h1 id="titulo">SISTEMA DE GESTAO ACADEMICA</h1>
+        <p id="subtitulo">MANUTENÇÃO DE USUARIOS DO SISTEMA INTERNO</p>
+        <br>
+    </div>
+
+    <form>
+
+        <fieldset class="grupo">
+        
+            <div class="campo">
+                <label for="Login"><strong>Login</strong></label>
+                <input type="text" name="Login" id="Login" required>
+            </div>
+
+        
+            <div class="campo">
+                <label for="Senha"><strong>Senha</strong></label>
+                <input type="password" name="Senha" id="Senha" required>
+            </div>
+        </fieldset> 
+
+        <div class="campo">
+            <label for="Status"><strong>Status</strong></label>
+            <select id="Status" required>
+              <option selected disabled value="">Selecione</option>
+              <option>Inativo</option>
+              <option>Ativo</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label><strong>Tipo</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="Tecnico" checked>Tecnico
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="Professor">Professor
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="Aluno">Aluno
+            </label>
+        </div>
+    
+        <div class="campo">
+            <label for="Data"><strong>Data Criação</strong></label>
+            <input type="text" name="Data" id="Data" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Perfil</strong></label>
+            <label>
+                <input type="radio" name="devwebb" value="Convidado" checked>Convidado
+            </label>
+            <label>
+                <input type="radio" name="devwebb" value="Administrador">Administrador
+            </label>
+        </div>
+
+        <div class="campo">
+            <br>
+            <label for="Observação"><strong>Observações </strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+        
+
+        <div class="campo">
+            <label><strong>Modulos</strong></label>
+            <label>
+                <input type="radio" name="devwebbb" value="Compras" checked>Convidado
+            </label>
+            <label>
+                <input type="radio" name="devwebbb" value="Biblioteca">Administrador
+            </label>
+            <label>
+                <input type="radio" name="devwebbb" value="Academico">Academico
+            </label>
+            <label>
+                <input type="radio" name="devwebb" value="Documentação" checked>Convidado
+            </label>
+            <label>
+                <input type="radio" name="devwebb" value="Recursos-humanos">Recursoshumanos
+            </label>
+        </div>
+
+        <button class="botao" type="submit" onsubmit="">Cadastrar</button>   
+        <button class="botao" type="submit" onsubmit="">Excluir</button>            
+
+                
+
+        </form>
+</body>
+</html>
